@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+	{{title}}
+{% endblock %}
+
+{% block content %}
+	<a href="{{url_for('Doc.index')}}">Home</a> 
+	<form method="post" action="login" class="form-login">
+	    <label for="username">E-mail</label>
+	    <input name="email" id="email" required>
+	    <br>
+	    <label for="password">Senha</label>
+	    <input type="password" name="password" id="password" required>
+		<br>
+		<button type="submit">
+			Entrar
+		</button>
+		<br>
+		<button>
+			Criar conta
+		</button>
+	</form>
+{% endblock %}

@@ -1,0 +1,15 @@
+.form-login {
+	height: 100%; 
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stratch;
+	flex-flow: column nowrap;
+	flex-direction: column; 
+	
+} input {
+	height: 40px;
+} form > button {
+	border-radius: 20px;
+	height: 40px;
+}

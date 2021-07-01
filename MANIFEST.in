@@ -1,0 +1,4 @@
+graft gameover/api/static
+graft gameover/api/templates
+graft tests
+global-exclude *.pyc

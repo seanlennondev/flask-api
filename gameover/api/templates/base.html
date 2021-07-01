@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}" />
+		<title>Gameover {% block title %}{% endblock %}</title>
+	</head>
+	<body class="app">
+		<header class="header">
+			<div class="header-item title">
+				Gameover
+			</div>
+			<div class="header-item username">
+				{{user.name}} {{user.surname}}
+			</div>
+		</header>
+		
+		<main class="main">
+			{% block content %}{% endblock %}
+		</main>
+		
+		<footer class="footer">
+			<div class="header-item title">
+				Footer
+			</div>
+			<div class="header-item">
+				{{user.role}}
+			</div>
+		</footer>
+	</body>
+</html>
